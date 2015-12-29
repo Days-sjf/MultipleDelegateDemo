@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface TableViewDelegate : NSObject
+@interface TableViewDelegate : NSObject <UIScrollViewDelegate>
 
 @end

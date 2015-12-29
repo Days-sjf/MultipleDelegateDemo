@@ -13,6 +13,10 @@
 		6ACC799F1C17DC90004E1338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACC799D1C17DC90004E1338 /* Main.storyboard */; };
 		6ACC79A11C17DC90004E1338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACC79A01C17DC90004E1338 /* Assets.xcassets */; };
 		6ACC79A41C17DC90004E1338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACC79A21C17DC90004E1338 /* LaunchScreen.storyboard */; };
+		6ACC79AD1C17DCB0004E1338 /* MultipleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC79AC1C17DCB0004E1338 /* MultipleDelegate.m */; };
+		6ACC79B01C17F279004E1338 /* ScrollviewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC79AF1C17F279004E1338 /* ScrollviewDelegate.m */; };
+		6ACC79B31C17F4BA004E1338 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC79B21C17F4BA004E1338 /* TableViewDelegate.m */; };
+		6ACC79B91C182235004E1338 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACC79B81C182235004E1338 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		6ACC79A01C17DC90004E1338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ACC79A31C17DC90004E1338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ACC79A51C17DC90004E1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ACC79AB1C17DCB0004E1338 /* MultipleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleDelegate.h; sourceTree = "<group>"; };
+		6ACC79AC1C17DCB0004E1338 /* MultipleDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleDelegate.m; sourceTree = "<group>"; };
+		6ACC79AE1C17F279004E1338 /* ScrollviewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollviewDelegate.h; sourceTree = "<group>"; };
+		6ACC79AF1C17F279004E1338 /* ScrollviewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollviewDelegate.m; sourceTree = "<group>"; };
+		6ACC79B11C17F4BA004E1338 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
+		6ACC79B21C17F4BA004E1338 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
+		6ACC79B81C182235004E1338 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,13 @@
 				6ACC79A21C17DC90004E1338 /* LaunchScreen.storyboard */,
 				6ACC79A51C17DC90004E1338 /* Info.plist */,
 				6ACC79941C17DC90004E1338 /* Supporting Files */,
+				6ACC79AB1C17DCB0004E1338 /* MultipleDelegate.h */,
+				6ACC79AC1C17DCB0004E1338 /* MultipleDelegate.m */,
+				6ACC79AE1C17F279004E1338 /* ScrollviewDelegate.h */,
+				6ACC79AF1C17F279004E1338 /* ScrollviewDelegate.m */,
+				6ACC79B11C17F4BA004E1338 /* TableViewDelegate.h */,
+				6ACC79B21C17F4BA004E1338 /* TableViewDelegate.m */,
+				6ACC79B81C182235004E1338 /* Images.xcassets */,
 			);
 			path = MultipleDelegateDemo;
 			sourceTree = "<group>";
@@ -137,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACC79A41C17DC90004E1338 /* LaunchScreen.storyboard in Resources */,
+				6ACC79B91C182235004E1338 /* Images.xcassets in Resources */,
 				6ACC79A11C17DC90004E1338 /* Assets.xcassets in Resources */,
 				6ACC799F1C17DC90004E1338 /* Main.storyboard in Resources */,
 			);
@@ -149,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACC79AD1C17DCB0004E1338 /* MultipleDelegate.m in Sources */,
 				6ACC799C1C17DC90004E1338 /* ViewController.m in Sources */,
+				6ACC79B31C17F4BA004E1338 /* TableViewDelegate.m in Sources */,
+				6ACC79B01C17F279004E1338 /* ScrollviewDelegate.m in Sources */,
 				6ACC79991C17DC90004E1338 /* AppDelegate.m in Sources */,
 				6ACC79961C17DC90004E1338 /* main.m in Sources */,
 			);
@@ -263,10 +285,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiafeng shang (FY4PNDNB44)";
 				INFOPLIST_FILE = MultipleDelegateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.days.shang.MultipleDelegateDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slyao.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "168ba3ad-6d16-4387-ae60-cb0f1ea40e44";
 			};
 			name = Debug;
 		};
@@ -274,10 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jiafeng shang (FY4PNDNB44)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiafeng shang (FY4PNDNB44)";
 				INFOPLIST_FILE = MultipleDelegateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.days.shang.MultipleDelegateDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slyao.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "168ba3ad-6d16-4387-ae60-cb0f1ea40e44";
 			};
 			name = Release;
 		};
@@ -300,6 +329,7 @@
 				6ACC79AA1C17DC90004E1338 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

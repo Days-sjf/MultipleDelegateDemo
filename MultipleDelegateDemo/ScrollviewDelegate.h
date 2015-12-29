@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ScrollviewDelegate : NSObject
+@interface ScrollviewDelegate : NSObject <UIScrollViewDelegate>
 
 @end

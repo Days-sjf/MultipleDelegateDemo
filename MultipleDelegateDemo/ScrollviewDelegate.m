@@ -10,4 +10,9 @@
 
 @implementation ScrollviewDelegate
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"我是delegate====1111，哈啊哈");
+}
+
 @end

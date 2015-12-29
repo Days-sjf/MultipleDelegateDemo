@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface MultipleDelegate : NSObject
+@interface MultipleDelegate : NSObject<UIScrollViewDelegate>
+
+@property (nonatomic, strong)NSMutableArray *delegates;
 
 @end
